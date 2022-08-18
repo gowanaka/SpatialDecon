@@ -71,6 +71,6 @@ deriveWeights <- function(norm, raw = NULL, error.model = "dsp",
     
     # define total SD, and invert to get weights
     sds.tot <- sqrt(sds.tech^2 + sds.bio^2)
-    wts <- 1 / sds.tech
+    wts <- 1 / sds.tot
     return(wts)
 }
